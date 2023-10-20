@@ -11,28 +11,112 @@
     .orderSummary{
         display: flex;
         flex-direction: column;
+       
+    }
+    section{
+        margin: 13px;
     }
 }
-.cartItemContainer{
-    border: 1px solid;
+.cartItemCard{
+    border: 0;
     padding: 10px;
-    border-radius: 15px;
-    margin-top: 10px;
     
+    margin-top: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    color: black;
+    transition: all 250ms;
+    height: fit-content;
+   
 }
+
+
+
 
 .cartItem{
     padding: 10px;
     display: flex;
     flex-direction: row;
     gap: 5px;
-    padding-inline-end: 100px;
+    
+    /* margin-bottom: 20px; */
+    
 }
 .cartItemImg{
     width: 150px;
     height: 150px;
+    overflow: hidden;
 }
 .itemInfo{
-    margin: 5px;
+    
     margin-left: 30px;
+    
+}
+
+.itemInfo p{
+    height: 20px;
+}
+.qtyBtn{
+   
+   background-color: rgb(182, 184, 180);
+   margin-left: 8px;
+   /* border: 2px solid; */
+   padding-left: 10px;
+   border-radius: 5px;
+   padding-right: 10px;
+}
+
+.couponDiv{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* width: fit-content; */
+    
+}
+.couponDiv input:focus{
+    outline: none;
+
+}
+
+
+
+.checkoutCard{
+    /* border: 1px solid; */
+    padding: 25px;
+    margin-top: 5px;
+    line-height: 20px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.checkoutCard button{
+    width: 100%;
+    padding: 6px;
+    margin-top: 15px;
+    font-weight: bold;
+    background-color: rgb(55, 115, 246);
+    border: none;
+    color: white;
+}
+
+.product-cart{
+    margin: 20px;
+    color: rgb(0, 0, 0);
+    width: 200px;
+    height: 250px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    padding: 10px;
+    text-align: center;
+    line-height: 20px;
+}
+.product-cart:hover, .product-cart:focus-within{
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+    transform: scale(1.05);
+      transition: transform 500ms ease-in;
+}
+.product-cart-content{
+    margin-top: 10px;
+}
+.product-cart-content button{
+    margin-top: 30px;
+    width: 100%;
 }

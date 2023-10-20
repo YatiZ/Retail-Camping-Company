@@ -1,6 +1,6 @@
 *{
     margin: 0;
-    overflow-x: hidden;
+    /* overflow: hidden; */
 }
 
 /* responsive styles */
@@ -40,7 +40,7 @@
     color: white;
     text-align: center;
     padding: 9px;
-   
+    overflow: hidden;
 
 }
 .fa-solid:hover{
@@ -55,7 +55,7 @@
     display: flex;
     padding: 15px;
     justify-content: space-around;
-    
+    overflow: hidden;
 }
 .search{
     display: flex;
@@ -272,6 +272,7 @@ a{
     padding:30px 0px;
     font-family: 'Play', sans-serif;
     text-align:center;
+    overflow: hidden;
     }
     
     .footer .row{
