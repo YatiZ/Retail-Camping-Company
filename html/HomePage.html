@@ -4,216 +4,339 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+   
     <script
       src="https://kit.fontawesome.com/9dca7ae98e.js"
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="/css/HomePage.css" />
+    <script src="/js/script.js"></script>
   </head>
   <body>
     <div class="advertiseText">
       <a href="#trendyItems">TRENDY CAMPING ACCESSORIES | SHOP NOW</a>
 
-      <i style="float: right;" class="fa-solid fa-xmark"></i>
+      <i style="float: right" class="fa-solid fa-xmark"></i>
     </div>
     <header class="nav">
-      
       <a href="/html/HomePage.html">Home</a>
       <div class="rightNav">
         <a href="/html/CampingEquipmentPage.html">Camping Equipment</a>
         <a href="/html/FurniturePage.html">Furniture</a>
         <a href="/html/ReviewsPage.html">Reviews</a>
         <a href="/html/OffersPage.html">Offers and Packages</a>
-        <a href="/html/BasketPage.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="/html/BasketPage.html"
+          ><i class="fa-solid fa-cart-shopping"></i
+        ></a>
       </div>
     </header>
     <div class="search">
-        <div class="search-bar">
-            <input  placeholder=" What are you looking for?">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-        
+      <div class="search-bar">
+        <input placeholder=" What are you looking for?" />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
     </div>
-    <hr>
-    <div class="trendySearch">     
-            <span style="font-size: 30px;font-weight: bold;">Trending Searches: </span>
-            <button class="trendyButton">Tents</button>
-            <button class="trendyButton">Compasses</button>
-            <button class="trendyButton">Camping Chairs</button>
-            <button class="trendyButton">Camping Chairs</button>
+    <hr />
+    <div class="trendySearch">
+      <span style="font-size: 30px; font-weight: bold"
+        >Trending Searches:
+      </span>
+      <button class="trendyButton">Tents</button>
+      <button class="trendyButton">Compasses</button>
+      <button class="trendyButton">Camping Chairs</button>
+      <button class="trendyButton">Camping Chairs</button>
     </div>
-    <hr>
+    <hr />
+<!-- slide section -->
     <div class="campImg">
-        <img width="100%" height="100%" src="/images/camping-pic.jpg" alt="campImg">
+      <img src="/images/camping-pic.jpg" style="width: 100%;object-fit: contain;" alt="">
     </div>
-    <hr>
+    
+
+    <hr />
 
     <!-- trendy items  -->
     <h1>Popular Items</h1>
-   
-        <div class="trendyItems" id="trendyItems">
-       
-     
-            <div class="card">
-               <img class="card-background" src="/images/camping-pic.jpg" width="100%" height="100%">
-               <div class="card-content | flow">
-                 <div class="card-content-container | flow">
-                     <h2 class="card-title">Tents</h2>
-                     <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto qui voluptatibus.</p>
-                 </div>
-                 <button class="trendyButton card-button" style="margin-left: 0px;">Buy</button>
-               </div>
-            </div>
-     
-            <div class="card">
-             <img class="card-background" src="/images/camping-pic.jpg" width="100%" height="100%">
-             <div class="card-content | flow">
-               <div class="card-content-container | flow">
-                   <h2 class="card-title">Camping</h2>
-                   <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto qui voluptatibus.</p>
-               </div>
-               <button class="trendyButton card-button" style="margin-left: 0px;">Buy</button>
-             </div>
-          </div>
-     
-          <div class="card">
-             <img class="card-background" src="/images/camping-pic.jpg" width="100%" height="100%">
-             <div class="card-content | flow">
-               <div class="card-content-container | flow">
-                   <h2 class="card-title">Camping</h2>
-                   <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto qui voluptatibus.</p>
-               </div>
-               <button class="trendyButton card-button" style="margin-left: 0px;">Buy</button>
-             </div>
-          </div>
 
-          <div class="card">
-            <img class="card-background" src="/images/camping-pic.jpg" width="100%" height="100%">
-            <div class="card-content | flow">
-              <div class="card-content-container | flow">
-                  <h2 class="card-title">Camping</h2>
-                  <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto qui voluptatibus.</p>
-              </div>
-              <button class="trendyButton card-button" style="margin-left: 0px;">Buy</button>
-            </div>
-         </div>
-  
-         <div class="card">
-          <img class="card-background" src="/images/camping-pic.jpg" width="100%" height="100%">
-          <div class="card-content | flow">
-            <div class="card-content-container | flow">
-                <h2 class="card-title">Camping</h2>
-                <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto qui voluptatibus.</p>
-            </div>
-            <button class="trendyButton card-button" style="margin-left: 0px;">Buy</button>
-          </div>
-       </div>
-  
-       <div class="card">
-          <img class="card-background" src="/images/camping-pic.jpg" width="100%" height="100%">
-          <div class="card-content | flow">
-            <div class="card-content-container | flow">
-                <h2 class="card-title">Camping</h2>
-                <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto qui voluptatibus.</p>
-            </div>
-            <button class="trendyButton card-button" style="margin-left: 0px;">Buy</button>
-          </div>
-       </div>
-
-       <div class="card">
-        <img class="card-background" src="/images/camping-pic.jpg" width="100%" height="100%">
+    <div class="trendyItems" id="trendyItems">
+      <div class="card">
+        <img
+          class="card-background"
+          src="/images/camping-pic.jpg"
+          width="100%"
+          height="100%"
+        />
         <div class="card-content | flow">
           <div class="card-content-container | flow">
-              <h2 class="card-title">Camping</h2>
-              <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto qui voluptatibus.</p>
+            <h2 class="card-title">Tents</h2>
+            <p class="card-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto qui
+              voluptatibus.
+            </p>
           </div>
-          <button class="trendyButton card-button" style="margin-left: 0px;">Buy</button>
+          <button class="trendyButton card-button" style="margin-left: 0px">
+            Buy
+          </button>
         </div>
-     </div>
-
-     <div class="card">
-      <img class="card-background" src="/images/camping-pic.jpg" width="100%" height="100%">
-      <div class="card-content | flow">
-        <div class="card-content-container | flow">
-            <h2 class="card-title">Camping</h2>
-            <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto qui voluptatibus.</p>
-        </div>
-        <button class="trendyButton card-button" style="margin-left: 0px;">Buy</button>
       </div>
-   </div>
 
-   <div class="card">
-      <img class="card-background" src="/images/camping-pic.jpg" width="100%" height="100%">
-      <div class="card-content | flow">
-        <div class="card-content-container | flow">
+      <div class="card">
+        <img
+          class="card-background"
+          src="/images/camping-pic.jpg"
+          width="100%"
+          height="100%"
+        />
+        <div class="card-content | flow">
+          <div class="card-content-container | flow">
             <h2 class="card-title">Camping</h2>
-            <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto qui voluptatibus.</p>
-        </div>
-        <button class="trendyButton card-button" style="margin-left: 0px;">Buy</button>
-      </div>
-   </div>
-     
-          <div class="card">
-             <img class="card-background" src="/images/camping-pic.jpg" width="100%" height="100%">
-             <div class="card-content | flow">
-               <div class="card-content-container | flow">
-                   <h2 class="card-title">Camping</h2>
-                   <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto qui voluptatibus.</p>
-               </div>
-               <button class="trendyButton card-button" style="margin-left: 0px;">Buy</button>
-             </div>
+            <p class="card-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto qui
+              voluptatibus.
+            </p>
           </div>
-     
-          <div class="card">
-           <img class="card-background" src="/images/camping-pic.jpg" width="100%" height="100%">
-           <div class="card-content | flow">
-             <div class="card-content-container | flow">
-                 <h2 class="card-title">Camping</h2>
-                 <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto qui voluptatibus.</p>
-             </div>
-             <button class="trendyButton card-button" style="margin-left: 0px;">Buy</button>
-           </div>
+          <button class="trendyButton card-button" style="margin-left: 0px">
+            Buy
+          </button>
         </div>
-     
-        <div class="card">
-           <img class="card-background" src="/images/camping-pic.jpg" width="100%" height="100%">
-           <div class="card-content | flow">
-             <div class="card-content-container | flow">
-                 <h2 class="card-title">Camping</h2>
-                 <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto qui voluptatibus.</p>
-             </div>
-             <button class="trendyButton card-button" style="margin-left: 0px;">Buy</button>
-           </div>
+      </div>
+
+      <div class="card">
+        <img
+          class="card-background"
+          src="/images/camping-pic.jpg"
+          width="100%"
+          height="100%"
+        />
+        <div class="card-content | flow">
+          <div class="card-content-container | flow">
+            <h2 class="card-title">Camping</h2>
+            <p class="card-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto qui
+              voluptatibus.
+            </p>
+          </div>
+          <button class="trendyButton card-button" style="margin-left: 0px">
+            Buy
+          </button>
         </div>
-     
-         </div>
-    
-    
+      </div>
+
+      <div class="card">
+        <img
+          class="card-background"
+          src="/images/camping-pic.jpg"
+          width="100%"
+          height="100%"
+        />
+        <div class="card-content | flow">
+          <div class="card-content-container | flow">
+            <h2 class="card-title">Camping</h2>
+            <p class="card-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto qui
+              voluptatibus.
+            </p>
+          </div>
+          <button class="trendyButton card-button" style="margin-left: 0px">
+            Buy
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          class="card-background"
+          src="/images/camping-pic.jpg"
+          width="100%"
+          height="100%"
+        />
+        <div class="card-content | flow">
+          <div class="card-content-container | flow">
+            <h2 class="card-title">Camping</h2>
+            <p class="card-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto qui
+              voluptatibus.
+            </p>
+          </div>
+          <button class="trendyButton card-button" style="margin-left: 0px">
+            Buy
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          class="card-background"
+          src="/images/camping-pic.jpg"
+          width="100%"
+          height="100%"
+        />
+        <div class="card-content | flow">
+          <div class="card-content-container | flow">
+            <h2 class="card-title">Camping</h2>
+            <p class="card-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto qui
+              voluptatibus.
+            </p>
+          </div>
+          <button class="trendyButton card-button" style="margin-left: 0px">
+            Buy
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          class="card-background"
+          src="/images/camping-pic.jpg"
+          width="100%"
+          height="100%"
+        />
+        <div class="card-content | flow">
+          <div class="card-content-container | flow">
+            <h2 class="card-title">Camping</h2>
+            <p class="card-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto qui
+              voluptatibus.
+            </p>
+          </div>
+          <button class="trendyButton card-button" style="margin-left: 0px">
+            Buy
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          class="card-background"
+          src="/images/camping-pic.jpg"
+          width="100%"
+          height="100%"
+        />
+        <div class="card-content | flow">
+          <div class="card-content-container | flow">
+            <h2 class="card-title">Camping</h2>
+            <p class="card-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto qui
+              voluptatibus.
+            </p>
+          </div>
+          <button class="trendyButton card-button" style="margin-left: 0px">
+            Buy
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          class="card-background"
+          src="/images/camping-pic.jpg"
+          width="100%"
+          height="100%"
+        />
+        <div class="card-content | flow">
+          <div class="card-content-container | flow">
+            <h2 class="card-title">Camping</h2>
+            <p class="card-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto qui
+              voluptatibus.
+            </p>
+          </div>
+          <button class="trendyButton card-button" style="margin-left: 0px">
+            Buy
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          class="card-background"
+          src="/images/camping-pic.jpg"
+          width="100%"
+          height="100%"
+        />
+        <div class="card-content | flow">
+          <div class="card-content-container | flow">
+            <h2 class="card-title">Camping</h2>
+            <p class="card-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto qui
+              voluptatibus.
+            </p>
+          </div>
+          <button class="trendyButton card-button" style="margin-left: 0px">
+            Buy
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          class="card-background"
+          src="/images/camping-pic.jpg"
+          width="100%"
+          height="100%"
+        />
+        <div class="card-content | flow">
+          <div class="card-content-container | flow">
+            <h2 class="card-title">Camping</h2>
+            <p class="card-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto qui
+              voluptatibus.
+            </p>
+          </div>
+          <button class="trendyButton card-button" style="margin-left: 0px">
+            Buy
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          class="card-background"
+          src="/images/camping-pic.jpg"
+          width="100%"
+          height="100%"
+        />
+        <div class="card-content | flow">
+          <div class="card-content-container | flow">
+            <h2 class="card-title">Camping</h2>
+            <p class="card-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto qui
+              voluptatibus.
+            </p>
+          </div>
+          <button class="trendyButton card-button" style="margin-left: 0px">
+            Buy
+          </button>
+        </div>
+      </div>
+    </div>
 
     <!-- footer section -->
     <footer>
-        <div class="footer">
+      <div class="footer">
         <div class="row">
-        <a href="#"><i class="fa fa-facebook"></i></a>
-        <a href="#"><i class="fa fa-instagram"></i></a>
-        <a href="#"><i class="fa fa-youtube"></i></a>
-        <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
         </div>
-        
+
         <div class="row">
-        <ul>
-        <li><a href="#">Contact us</a></li>
-        <li><a href="#">Our Services</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms & Conditions</a></li>
-        <li><a href="#">Career</a></li>
-        </ul>
+          <ul>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Career</a></li>
+          </ul>
         </div>
-        
+
         <div class="row">
-        INFERNO Copyright © 2021 Inferno - All rights reserved || Designed By: Mahesh 
+          INFERNO Copyright © 2021 Inferno - All rights reserved || Designed By:
+          Mahesh
         </div>
-        </div>
-        </footer>
+      </div>
+    </footer>
   </body>
 </html>
