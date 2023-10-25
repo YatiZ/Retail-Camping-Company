@@ -104,7 +104,10 @@ a{
    padding: 50px;
    justify-content: center;
 }
-
+.trendySearchText{
+  font-size: 30px;
+  font-weight: bold;
+}
 
 /* trendysearch buttons */
 
@@ -265,6 +268,7 @@ a{
       transition: opacity 500ms ease-in, transform 500ms ease-in;
       transition-delay: 500ms;
     }
+   
   }
 
 /* footer style */
