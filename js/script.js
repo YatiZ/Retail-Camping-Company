@@ -1,3 +1,16 @@
+//Toggle
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+// let actions = document.querySelectorAll('section')
+// let navlinks = 
+
+
 var slideIndex = 1;
 showDivs(slideIndex);
 

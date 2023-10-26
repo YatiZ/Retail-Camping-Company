@@ -1,6 +1,58 @@
 *{
     margin: 0;
     /* overflow: hidden; */
+    font-family:'Times New Roman', Times, serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
 
 /* open website animation */
@@ -15,7 +67,12 @@
     }
 }
 
+
+
 @media (max-width: 976px){
+    
+
+
     .trendySearch{
       display: flex;
       flex-direction: column;
@@ -28,12 +85,33 @@
       width: 80%;
     }
     .campImg{
-        height: 230px;
+        height: 100px;
+        margin-bottom: 0;
     }
     .trendyItems{
         display: grid;
         grid-template-columns: repeat(1, minmax(0, 1fr));
-        padding-left: 15px;
+        /* padding-left: 15px; */
+        justify-content: center;
+        overflow: hidden;
+    }
+    .about-camp{
+      
+      overflow: hidden;
+      line-height: 25px;
+      text-align: center;
+      width: fit-content;
+      padding-left: 0px;
+      padding-right: 0;
+      display: inline;
+    }
+    .about-camp h2{
+      margin-top: 0;
+      text-align: center;
+    
+    }
+    .about-camp .button-92{
+      margin-left: 90px;
     }
   }
 
@@ -52,16 +130,11 @@
 }
 
 
-.nav{
-    background-color: #254e1c;
-    display: flex;
-    padding: 15px;
-    justify-content: space-around;
-    overflow: hidden;
-}
+
 .search{
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 .search-bar{
     margin: 10px;
@@ -81,7 +154,7 @@
   border: 0;
   width: 100%;
   padding: 5px;
- font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+ /* font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif; */
   padding: 7px 20px;
   text-align: center;
   text-decoration: none;
@@ -90,10 +163,7 @@
 
   
 }
-.rightNav{
-    display: flex;
-    gap: 60px;
-}
+
 a{
     text-decoration: none;
     color: white;
@@ -118,7 +188,7 @@ a{
   color: #254e1c;
   cursor: pointer;
   display: inline-block;
-  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  /* font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif; */
   padding: 7px 20px;
   text-align: center;
   text-decoration: none;
@@ -140,6 +210,56 @@ a{
     object-fit: contain;
     overflow: hidden;
 }
+
+.about-camp{
+  margin: 10px;
+  padding-left: 100px;
+  padding-right: 70px;
+  line-height: 25px;
+  text-align: center;
+  
+}
+.about-camp h2{
+  text-align: center;
+  margin: 20px;
+}
+.about-camp .button-92 {
+  --c: #fff;
+
+  background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%) var(--_p,100%)/300% no-repeat,
+    #ff2a00;
+  color: #0000;
+  border: none;
+  transform: perspective(500px) rotateY(calc(20deg*var(--_i,-1)));
+  text-shadow: calc(var(--_i,-1)* 0.08em) -.01em 0   var(--c),
+    calc(var(--_i,-1)*-0.08em)  .01em 2px #0004;
+  outline-offset: .1em;
+  transition: 0.3s;
+}
+
+.button-92:hover,
+.button-92:focus-visible {
+  --_p: 0%;
+  --_i: 1;
+}
+
+.button-92:active {
+  text-shadow: none;
+  color: var(--c);
+  box-shadow: inset 0 0 9e9q #0005;
+  transition: 0s;
+}
+
+.button-92 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 10px;
+  cursor: pointer;
+  padding: .1em .3em;
+}
+
+
+
 .trendyItems{
     margin: 10px;
     /* display: grid;
@@ -268,7 +388,7 @@ a{
       transition: opacity 500ms ease-in, transform 500ms ease-in;
       transition-delay: 500ms;
     }
-   
+    
   }
 
 /* footer style */
@@ -276,7 +396,7 @@ a{
     margin-top: 20px;
     background:#4a4b3d;
     padding:30px 0px;
-    font-family: 'Play', sans-serif;
+    /* font-family: 'Play', sans-serif; */
     text-align:center;
     overflow: hidden;
     }
@@ -329,5 +449,84 @@ a{
     }
 
  
+/* items description hover style */
+
+.dropdown {
+  position: relative;
+  display: block;
+}
+.dropdown span{
+  text-decoration: underline blue;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 200px;
+  height: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  overflow: hidden;
+  z-index: 1;
+  left: 140px;
+  top: -120px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 
+
+
+
+/* Top brands name styles from home page */
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-250px * 7)); }
+}
+
+.slider {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 960px;
+}
+
+.slider::before,
+.slider::after {
+  background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  width: 200px;
+  position: absolute;
+  z-index: 2;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateY(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+
+.slide {
+  height: 100px;
+  width: 250px;
+}
