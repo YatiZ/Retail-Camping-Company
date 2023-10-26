@@ -9,6 +9,8 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="/css/HomePage.css" />
+    <link rel="stylesheet" href="/css/ReviewPage.css" />
+    <link rel="stylesheet" href="/css/BasketPage.css" />
 </head>
 <body>
     <div class="advertiseText">
@@ -16,16 +18,71 @@
   
         <i style="float: right;" class="fa-solid fa-xmark"></i>
       </div>
-      <header class="nav">
-        
-        <a href="/html/HomePage.html">Home</a>
+      <header class="topnav" id="myTopnav">
+        <h class="logo">RCC</h>
         <div class="rightNav">
-          <a href="/html/CampingEquipmentPage.html">Camping Equipment</a>
-        <a href="/html/FurniturePage.html">Furniture</a>
-        <a href="/html/ReviewsPage.html">Reviews</a>
-        <a href="/html/OffersPage.html">Offers and Packages</a>
-        <a href="/html/BasketPage.html"><i class="fa-solid fa-cart-shopping"></i></a>
+         
+            <a href="/html/HomePage.html">Home</a>
+            <a href="/html/CampingEquipmentPage.html">Camping Equipment</a>
+            <a href="/html/FurniturePage.html">Furniture</a>
+            <a href="/html/ReviewsPage.html">Reviews</a>
+            <a href="/html/OffersPage.html">Offers and Packages</a>
+            <a href="/html/BasketPage.html"
+              ><i class="fa-solid fa-cart-shopping"></i
+            ></a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+         
+          
         </div>
       </header>
+
+      <section>
+        <h1 class="review-title">Our Customer Reviews</h1>
+        <div class="reviewlists-container">
+           <div class="review-card">
+            <h1>5.0</h1>
+            <p>stars</p>
+            <b>(25 reviews)</b>
+           </div>
+           <div class="review-bar">
+            <div class="progress-bar">
+              <span>5 <i class="fa fa-star"></i></span>
+              <div class="progress">
+                <div class="progress-value five-value"></div>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <span>5 <i class="fa fa-star"></i></span>
+              <div class="progress">
+                <div class="progress-value four-value"></div>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <span>5 <i class="fa fa-star"></i></span>
+              <div class="progress">
+                <div class="progress-value three-value"></div>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <span>5 <i class="fa fa-star"></i></span>
+              <div class="progress">
+                <div class="progress-value two-value"></div>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <span>5 <i class="fa fa-star"></i></span>
+              <div class="progress">
+                <div class="progress-value one-value"></div>
+              </div>
+            </div>
+            
+
+           
+
+           </div>
+        </div>
+      </section>
 </body>
 </html>

@@ -1,0 +1,102 @@
+section{
+   display: grid;
+   justify-content: center;
+}
+.review-title{
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+
+.reviewlists-container{
+    display: flex;
+    margin: 30px;
+    justify-content: center;
+}
+
+.review-card h1{
+    font-size: 4rem;
+}
+.review-card{
+    border: 0;
+    padding: 20px 40px 30px;
+    margin-top: 10px;
+    margin-left: 100px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    color: black;
+    transition: all 250ms;
+    height: fit-content;
+    width: fit-content;
+}
+
+/* review progress bar */
+.fa-star{
+    color: rgb(224, 207, 27);
+}
+.review-bar {
+   margin-left: 100px;
+  }
+
+.progress-bar{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+.progress {
+    background: rgba(38, 36, 36, 0.1);
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 ;
+    display: flex;
+    height: 10px;
+    width: 300px;
+  }
+  
+  .progress-value {
+    box-shadow: 0 10px 40px -10px #292727;
+    border-radius: 100px;
+    background: rgb(224, 207, 27);
+    height: 10px;
+    width: 0;
+  }
+  .five-value{
+    animation: load5 3s normal forwards;
+  }
+  @keyframes load5 {
+    0% { width: 0; }
+    100% { width: 100%; }
+  }
+
+  .four-value{
+    animation: load4 3s normal forwards;
+  }
+  @keyframes load4 {
+    0% { width: 0; }
+    100% { width: 80%; }
+  }
+
+  .three-value{
+    animation: load3 3s normal forwards;
+  }
+  @keyframes load3 {
+    0% { width: 0; }
+    100% { width: 60%; }
+  }
+
+  .two-value{
+    animation: load2 3s normal forwards;
+  }
+  @keyframes load2 {
+    0% { width: 0; }
+    100% { width: 40%; }
+  }
+  .one-value{
+    animation: load1 3s normal forwards;
+  }
+  @keyframes load1 {
+    0% { width: 0; }
+    100% { width: 20%; }
+  }

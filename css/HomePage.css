@@ -6,17 +6,22 @@
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #4a4b3d;
+
+}
+.rightNav{
+  float: right;
 }
 
-.topnav a {
+.topnav a, .topnav .logo {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #b0aaaa;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  
 }
 
 .topnav a:hover {
@@ -34,11 +39,12 @@
 }
 
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
+  .topnav a:not(.logo) {display: none;}
   .topnav a.icon {
     float: right;
     display: block;
   }
+  
 }
 
 @media screen and (max-width: 600px) {
@@ -49,7 +55,7 @@
     top: 0;
   }
   .topnav.responsive a {
-    float: none;
+    float: left;
     display: block;
     text-align: left;
   }
