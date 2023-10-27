@@ -1,13 +1,41 @@
-section{
+/* section{
    display: grid;
    justify-content: center;
-}
+   overflow: hidden;
+} */
 .review-title{
     margin-top: 10px;
     text-align: center;
 }
 
-
+@media (max-width: 976px){
+    section{
+        
+    }
+  
+    .reviewlists-container{
+        display: flex;
+        flex-direction: column;
+       
+        margin-left: 0px;
+       padding-left: 0px;
+       
+    }
+    .review-card{
+        margin-left: 20px;
+    }
+    .review-bar {
+        margin-left: 0px;
+        float: right;
+       }
+    .progress{
+        align-items: flex-start;
+    }
+    .progress-bar{
+        display: flex;
+        flex-direction: row;
+    }
+}
 
 .reviewlists-container{
     display: flex;
