@@ -119,6 +119,12 @@
     .about-camp .button-92{
       margin-left: 90px;
     }
+    .tip-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+   
   }
 
 .advertiseText{
@@ -140,7 +146,7 @@
 .search{
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 .search-bar{
     margin: 10px;
@@ -225,7 +231,7 @@ a{
   text-align: center;
   
 }
-.about-camp h2{
+.about-camp h1{
   text-align: center;
   margin: 20px;
 }
@@ -268,9 +274,11 @@ a{
 
 .trendyItems{
     margin: 10px;
-    /* display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr)); */
     margin-left: 50px;
+}
+.trendyTitle{
+  margin-top: 20px;
+  text-align: center;
 }
 
 /* card style */
@@ -308,9 +316,7 @@ a{
     hsl(0, 0%, 0%) 100%
   );
 }
-/* .card__content--container {
-    --flow-space: 1.25rem;
-  } */
+
 
 .card-title{
     position: relative;
@@ -494,6 +500,10 @@ a{
   0% { transform: translateX(0); }
   100% { transform: translateX(calc(-250px * 7)); }
 }
+.brand-title{
+  text-align: center;
+  margin: 10px;
+}
 
 .slider {
   background: white;
@@ -535,4 +545,24 @@ a{
 .slide {
   height: 100px;
   width: 250px;
+}
+
+/* Tip & Tricks style */
+.tip-title{
+  margin: 10px;
+  text-align: center;
+}
+.tip-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+.tip{
+  width: 300px;
+  line-height: 25px;
+}
+.tip img{
+  width: 100%;
+  object-fit: contain;
 }
