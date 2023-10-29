@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script
       src="https://kit.fontawesome.com/9dca7ae98e.js"
@@ -10,47 +10,293 @@
     ></script>
     <script src="/js/script.js"></script>
     <link rel="stylesheet" href="/css/HomePage.css" />
-</head>
-<body>
+    <link rel="stylesheet" href="/css/Furniture.css" />
+  </head>
+  <body>
     <div class="advertiseText">
-        <a href="#trendyItems">TRENDY CAMPING ACCESSORIES | SHOP NOW</a>
-  
-        <i style="float: right;" class="fa-solid fa-xmark"></i>
+      <a href="#trendyItems">TRENDY CAMPING ACCESSORIES | SHOP NOW</a>
+
+      <i style="float: right" class="fa-solid fa-xmark"></i>
+    </div>
+
+    <header class="topnav" id="myTopnav">
+      <h class="logo">RCC</h>
+      <div class="rightNav">
+        <a href="/html/HomePage.html">Home</a>
+        <a href="/html/CampingEquipmentPage.html">Camping Equipment</a>
+        <a href="/html/FurniturePage.html">Furniture</a>
+        <a href="/html/ReviewsPage.html">Reviews</a>
+        <a href="/html/OffersPage.html">Offers and Packages</a>
+        <a href="/html/BasketPage.html"
+          ><i class="fa-solid fa-cart-shopping"></i
+        ></a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
-      <header class="topnav" id="myTopnav">
-        <h class="logo">RCC</h>
-        <div class="rightNav">
-         
-            <a href="/html/HomePage.html">Home</a>
-            <a href="/html/CampingEquipmentPage.html">Camping Equipment</a>
-            <a href="/html/FurniturePage.html">Furniture</a>
-            <a href="/html/ReviewsPage.html">Reviews</a>
-            <a href="/html/OffersPage.html">Offers and Packages</a>
-            <a href="/html/BasketPage.html"
-              ><i class="fa-solid fa-cart-shopping"></i
-            ></a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
-            </a>
-         
-          
-        </div>
-      </header>
-      <div class="search">
-          <div class="search-bar">
-              <input  placeholder=" What are you looking for?">
-              <i class="fa-solid fa-magnifying-glass"></i>
+    </header>
+
+    <div class="search">
+      <div class="search-bar">
+        <input placeholder=" What are you looking for?" />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="trendySearch">
+      <span class="trendySearchText">Trending Searches: </span>
+      <a href="#table" class="trendyButton">Table</a>
+      <a href="#cushion" class="trendyButton">Cushion</a>
+      <a href="#bed" class="trendyButton">Bed</a>
+      <a href="#chair" class="trendyButton">Chair</a>
+    </div>
+
+    <hr />
+    <!-- products cards -->
+    <div>
+      <a href="#essentials" id="essentials" class="camping-product-title"
+        >Camping Furnitures</a
+      >
+      <div class="furniture-container">
+        <div>
+          <div class="product-cart">
+            <div class="inside">
+              <div class="detailed-icon">
+                <i class="fa-solid fa-circle-info"></i>
+              </div>
+              <div class="detailed-contents">
+                <h4>Description</h4>
+                <div class="">
+                  chair Aktive Camping of 49x49x82 cm<br />
+                  steel structure that supports up to 110 kg <br />
+                  dark grey polyester with red stitching <br />
+                  1 coaster, fabric armrests and legs <br />
+                  Easy to wash with a damp cloth <br />
+                </div>
+              </div>
+            </div>
+
+            <div class="product-img">
+              <img
+                src="/images/aktive-bandolera-folding-camping-chair.jpg"
+                alt=""
+                style="width: 100%; object-fit: contain; height: 200px"
+              />
+            </div>
+
+            <div class="product-card-content">
+              <a href="#chair" id="chair"><h4>Aktive Folding Camping Chair</h4></a>
+             
+              <p>$150</p>
+
+              <button>ADD TO CART</button>
+            </div>
           </div>
-          
+        </div>
+
+        <div>
+          <div class="product-cart">
+            <div class="inside">
+              <div class="detailed-icon">
+                <i class="fa-solid fa-circle-info"></i>
+              </div>
+              <div class="detailed-contents">
+                <h4>Description</h4>
+                <div>
+                  for 6 people, recommended for camping<br />
+                  Measures: 110x70x70 cm <br />
+                  Rectangular shape and made of light <br />
+                  The surface is made of roll-up slats <br />
+                </div>
+              </div>
+            </div>
+
+            <div class="product-img">
+              <img
+                src="/images/aktive-110x70x70-cm-aluminium-folding-table.jpg"
+                alt=""
+                style="width: 100%"
+              />
+            </div>
+
+            <div class="product-card-content">
+              <a href="#table" id="table"><h4>Aktive Aluminium Folding Table</h4></a>
+              
+              <p>$55</p>
+
+              <button>ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="product-cart">
+            <div class="inside">
+              <div class="detailed-icon">
+                <i class="fa-solid fa-circle-info"></i>
+              </div>
+              <div class="detailed-contents">
+                <h4>Description</h4>
+                <div>
+                  This elegant garden lounger Aktive Garden is perfect to relax
+                  for hours and take advantage of the days of good outdoor time.
+                  It is made of silver steel and supports up to 110 kg It can be
+                  easily adjusted in 2 positions.
+                </div>
+              </div>
+            </div>
+
+            <div class="product-img">
+              <img
+                src="/images/aktive-reclining-lounger-with-cushion.jpg"
+                alt=""
+                style="width: 100%"
+              />
+            </div>
+
+            <div class="product-card-content">
+              <a href="#cushion" id="cushion"><h4>Aktive Lounger With Cushion</h4></a>
+              
+              <p>$350</p>
+
+              <button>ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="product-cart">
+            <div class="inside">
+              <div class="detailed-icon">
+                <i class="fa-solid fa-circle-info"></i>
+              </div>
+              <div class="detailed-contents">
+                <h4>Description</h4>
+                <p class="">
+                  This Is The Smallest Chair In The Lightweight Furniture Range.
+                  It Is Strong And Durable, Made With A Packable Aluminium Frame
+                  And A Special New Fabric By Nordisk. The Fabric Has The Look
+                  Of Canvas And The Lightness Of Linen, With A Lifestyle
+                  Feeling.
+                </p>
+              </div>
+            </div>
+
+            <div class="product-img">
+              <img
+                src="/images/nordisk-marielund-chair.jpg"
+                alt=""
+                style="width: 100%"
+              />
+            </div>
+
+            <div class="product-card-content">
+              <a href="#chair" id="chair"><h4>Nordisk Marielund Chair</h4></a>
+              
+              <p>$75</p>
+
+              <button>ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="product-cart">
+            <div class="inside">
+              <div class="detailed-icon">
+                <i class="fa-solid fa-circle-info"></i>
+              </div>
+              <div class="detailed-contents">
+                <h4>Description</h4>
+                <div class="">
+                  -Small pack size <br />
+                  - Lightweight <br />
+                  - Durable aluminium frame <br />
+                  - Carrybag for transport included <br />
+                  - Stable aluminum table top <br />
+                </div>
+              </div>
+            </div>
+
+            <div class="product-img">
+              <img
+                src="/images/robens-adventure-aluminium-s-table.jpg"
+                alt=""
+                style="width: 100%"
+              />
+            </div>
+
+            <div class="product-card-content">
+              <a href="#table" id="table"><h4>Robens Aluminium S Table</h4></a>
+              
+              <p>$140</p>
+
+              <button>ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="product-cart">
+            <div class="inside">
+              <div class="detailed-icon">
+                <i class="fa-solid fa-circle-info"></i>
+              </div>
+              <div class="detailed-contents">
+                <h4>Description</h4>
+                <p class="">
+                  - Very comfortable campbed - Elevated sleeping experience -
+                  Easy to assemble and pack - Tool free assembly - The
+                  ecological choice: 100% natural product - Transport packsack
+                  included - Made in Denmark
+                </p>
+              </div>
+            </div>
+
+            <div class="product-img">
+              <img
+                src="/images/nordisk-marselis-wooden-camping-bed.jpg"
+                alt=""
+                style="width: 100%"
+              />
+            </div>
+
+            <div class="product-card-content">
+              <a href="#bed" id="cushion"><h4>Nordisk Wooden Camping Bed</h4></a>
+              
+              <p>$270</p>
+
+              <button>ADD TO CART</button>
+            </div>
+          </div>
+        </div>
       </div>
-      <hr>
-      <div class="trendySearch">     
-              <span class="trendySearchText">Trending Searches: </span>
-              <button class="trendyButton">Tents</button>
-              <button class="trendyButton">Compasses</button>
-              <button class="trendyButton">Camping Chairs</button>
-              <button class="trendyButton">Camping Chairs</button>
+    </div>
+
+    <!-- footer section -->
+    <footer>
+      <div class="footer">
+        <div class="row">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+
+        <div class="row">
+          <ul>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Career</a></li>
+          </ul>
+        </div>
+
+        <div class="row">
+          TWINKLE Copyright © 2021 Twinkle - All rights reserved || Designed By:
+          Yati
+        </div>
       </div>
-      <hr>
-</body>
+    </footer>
+  </body>
 </html>
