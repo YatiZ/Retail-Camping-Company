@@ -1,0 +1,115 @@
+.products-container{
+    margin: 20px;
+    height: 310px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    white-space: nowrap;
+    gap: 10px;
+}
+.camping-product-title{
+    color: black;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.product-cart{
+    margin: 20px;
+    color: rgb(0, 0, 0);
+    width: 200px;
+    height: 250px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    padding: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+.product-cart:hover, .product-cart:focus-within{
+    /* box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25); */
+    transform: scale(1.05);
+      transition: transform 500ms ease-in;
+}
+.product-card-content{
+    margin-top: 10px;
+}
+.product-card-content button{
+    margin-top: 30px;
+    width: 100%;
+    padding: 4px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.product-card-content button:hover{
+    border: 4px rgb(75, 245, 49);
+}
+.product-cart{
+    width: 250px;
+    height: fit-content;
+    background: white;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0;
+    transform: scale(0.95);
+    transition: box-shadow 0.5s, transform 0.5s;
+    &:hover{
+      transform: scale(1);
+      box-shadow: 5px 20px 30px rgba(0,0,0,0.2);
+    }
+.inside{
+    z-index:9;
+    background: #92879B;
+    width:140px;
+    height:140px;
+    position: absolute;
+    top: -70px;
+    right: -70px;
+    border-radius: 0px 0px 200px 200px;
+    transition: all 0.5s, border-radius 2s, top 1s;
+    overflow: hidden;
+    .detailed-icon{
+      position:absolute;
+      right:85px;
+      top:85px;
+      color:white;
+      opacity: 1;
+    }
+    &:hover{
+      width:100%;
+      right:0;
+      top:0;
+      border-radius: 0;
+      height:80%;
+      .detailed-icon{
+        opacity: 0;
+        right:15px;
+        top:15px;
+      }
+      .detailed-contents{
+        opacity: 1;
+        transform: scale(1);
+        transform: translateY(0);
+      }
+    }
+    .detailed-contents{
+      padding: 5%;
+      opacity: 0;
+      transform: scale(0.5);
+      transform: translateY(-200%);
+      transition: opacity 0.2s, transform 0.8s;
+      table{
+        text-align:left;
+        width:100%;
+      }
+      h1, p, table{
+        color: white;
+      }
+      p{
+        font-size:13px;
+      }
+    }
+  }
+}
