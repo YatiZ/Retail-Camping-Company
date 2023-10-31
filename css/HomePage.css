@@ -4,6 +4,137 @@
     font-family:'Times New Roman', Times, serif;
 }
 
+/* Popup message style  */
+div a.open-chat-icon {
+  position: fixed;
+  z-index: 49;
+  bottom: 10px;
+  right: 14px;
+  width: 64px;
+  height: 64px;
+  background: #3498db;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  transition: background 0.25s;
+}
+div a.open-chat-icon:hover {
+  background: #0058ef;
+}
+svg.chat-icon {
+  width: 24px;
+  height: 24px;
+  fill: white;
+}
+
+div.popup {
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.4s;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+div.inner-popup {
+  position: relative;
+  background-color: white;
+  padding: 24px;
+  width: 480px;
+  border-radius: 16px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+div.popup:target {
+  opacity: 1;
+  pointer-events: all;
+}
+a.close-popup-button {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+a svg.close-popup-icon {
+  width: 32px;
+  height: 32px;
+  fill: #9ca3af;
+  cursor: pointer;
+}
+div.chat-form-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 64px;
+}
+div.chat-form-wrapper p {
+  margin-bottom: 16px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: #374151;
+}
+div.first-name,
+div.last-name,
+div.email {
+  margin-bottom: 16px;
+  border-style: solid;
+  border-color: #d1d5db;
+  border-radius: 8px;
+  
+  height: 48px;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+div.first-name:focus-within,
+div.last-name:focus-within,
+div.email:focus-within {
+  border-color: #0065ff;
+}
+input.first-name,
+input.last-name,
+input.email {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+input.first-name::placeholder,
+input.last-name::placeholder,
+input.email::placeholder {
+  font-size: 16px;
+  color: #6b7280;
+}
+div.chat-form-wrapper button {
+  height: 48px;
+  background-color: #0065ff;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.25s;
+}
+div.chat-form-wrapper button:hover {
+  background: #0058ef;
+}
+/* popup end */
+/* float icon & popup end */
+
+
 .topnav {
   overflow: hidden;
   background-color: #4a4b3d;
