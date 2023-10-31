@@ -190,6 +190,7 @@ div.chat-form-wrapper button:hover {
     display: block;
     text-align: left;
   }
+  
 }
 
 /* open website animation */
@@ -242,6 +243,11 @@ div.chat-form-wrapper button:hover {
       padding-right: 0;
       display: inline;
     }
+    @media (max-width: 976px){
+      .about-camp{
+        margin: 20px;
+      }
+    }
     .about-camp h2{
       margin-top: 0;
       text-align: center;
@@ -255,6 +261,7 @@ div.chat-form-wrapper button:hover {
       flex-direction: column;
       justify-content: center;
     }
+    
    
   }
 
@@ -306,6 +313,10 @@ div.chat-form-wrapper button:hover {
 
   
 }
+.search-bar input:focus{
+  border: none;
+  outline: none;
+}
 
 a{
     text-decoration: none;
@@ -353,6 +364,11 @@ a{
     object-fit: contain;
     overflow: hidden;
 }
+@media (max-width: 976px){
+  .campImg{
+    height: 150px;
+  }
+}
 
 .about-camp{
   margin: 10px;
@@ -362,6 +378,7 @@ a{
   text-align: center;
   
 }
+
 .about-camp h1{
   text-align: center;
   margin: 20px;
@@ -690,6 +707,13 @@ a{
   height: 100%;
 }
 
+
+@media (max-width: 976px){
+ .slider{
+  width: 380px;
+ }
+}
+
 /* Tip & Tricks style */
 .tip-title{
   margin: 10px;
@@ -708,4 +732,11 @@ a{
 .tip img{
   width: 100%;
   object-fit: contain;
+}
+@media (max-width: 976px){
+  .tip-container{
+   display: grid;
+   grid-template-rows: repeat(3,1fr);
+   padding-bottom: 30px;
+  }
 }
