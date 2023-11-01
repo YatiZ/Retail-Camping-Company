@@ -2,14 +2,15 @@
 /* reference - https://youtu.be/czNhJc79LZM?si=ctTFZB_cf4gi6da9 */
 
 
-section h1{
-    text-align: center;
-}
+
 .review-title{
     margin-top: 10px;
     text-align: center;
 }
 
+h1{
+    text-align: center;
+}
 
 
 @media (max-width: 976px){
@@ -17,14 +18,8 @@ section h1{
     .reviewlists-container{
         display: flex;
         flex-direction: column;
-       
-        margin-left: 0px;
-       padding-left: 0px;
-       
     }
-    .review-card{
-        margin-left: 20px;
-    }
+    
     .review-bar {
         margin-left: 0px;
         float: right;
@@ -39,7 +34,7 @@ section h1{
 }
 
 .reviewlists-container{
-    display: flex;
+   display: flex;
     margin: 30px;
     justify-content: center;
 }

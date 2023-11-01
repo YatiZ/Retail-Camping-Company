@@ -1,6 +1,10 @@
 .offer-headline{
     text-align: center;
-    margin-top: 20px;
+    margin: 20px;
+  
+}
+.offer-headline h1{
+    margin-bottom: 10px;
 }
 
 .offer-container{
@@ -10,6 +14,14 @@
     grid-template-columns: repeat(3,1fr);
     gap: 10px;
 }
+@media (max-width: 976px){
+    .offer-container{
+        display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 4px;
+       
+    }
+  }
 .offer-tag{
     width: 50px;
     margin-left: 0;
