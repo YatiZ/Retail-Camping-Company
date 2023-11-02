@@ -1,3 +1,14 @@
+//navbar active
+var header = document.getElementById("myDIV");
+var btns = header.getElementsByClassName("nav-btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+
 //Toggle
 function myFunction() {
     var x = document.getElementById("myTopnav");
