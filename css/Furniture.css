@@ -1,3 +1,10 @@
+/* plugin video style */
+.video-plugin{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
 .furniture-container {
     margin: 20px;
     

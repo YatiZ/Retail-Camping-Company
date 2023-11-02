@@ -139,11 +139,11 @@ h1{
   }
 
   .customer-profile img{
-    width: 50px;
-    height: 50px;
-    object-fit: fill;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    margin-right: 20px;
+    object-fit: cover;
+    margin-right: 8px;
   }
 
   /* review form style */
