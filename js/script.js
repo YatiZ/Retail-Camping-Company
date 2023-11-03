@@ -49,3 +49,4 @@ function showDivs(n) {
   dots[slideIndex-1].className += " w3-white";
 }
 
+

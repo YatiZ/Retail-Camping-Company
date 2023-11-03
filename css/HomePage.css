@@ -154,6 +154,22 @@ div.chat-form-wrapper button:hover {
   font-size: 17px;
   
 }
+.rightNav i{
+  position: relative;
+}
+.rightNav span{
+   background-color: red;
+   font-size: 10px;
+   width: 15px;
+   height: 15px;
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   border-radius: 50%;
+   position: absolute;
+   top: 50%;
+   right: -10px;
+}
 
 .topnav a:hover {
   background-color: #ddd;
