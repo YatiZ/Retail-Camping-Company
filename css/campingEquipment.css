@@ -63,10 +63,10 @@
   position: relative;
   overflow: hidden;
   border-radius: 10px 10px 10px 10px;
-  box-shadow: 0;
   transform: scale(0.95);
-  transition: box-shadow 0.5s, transform 0.5s;
-  &:hover {
+  transition: box-shadow 0.5s, transform 0.5s;}
+
+  .product-cart:hover {
     transform: scale(1);
     box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.2);
   }
@@ -81,30 +81,35 @@
     border-radius: 0px 0px 200px 200px;
     transition: all 0.5s, border-radius 2s, top 1s;
     overflow: hidden;
-    .detailed-icon {
+}
+
+    .inside .detailed-icon {
       position: absolute;
       right: 85px;
       top: 85px;
       color: white;
       opacity: 1;
     }
-    &:hover {
+    .inside:hover {
       width: 100%;
       right: 0;
       top: 0;
       border-radius: 0;
       height: 80%;
-      .detailed-icon {
+      
+    }
+    .inside:hover .detailed-icon {
         opacity: 0;
         right: 15px;
         top: 15px;
       }
-      .detailed-contents {
+    .inside:hover  .detailed-contents {
         opacity: 1;
         transform: scale(1);
         transform: translateY(0);
       }
-    }
+    
+
     .detailed-contents {
       margin-top: 20px;
       width: fit-content;
@@ -118,5 +123,4 @@
     .detailed-contents h4 {
       text-decoration: underline;
     }
-  }
-}
+ 

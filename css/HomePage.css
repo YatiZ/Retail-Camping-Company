@@ -134,11 +134,13 @@ div.chat-form-wrapper button:hover {
 /* popup end */
 /* float icon & popup end */
 
-
+header{
+  overflow: hidden;
+}
 .topnav {
   overflow: hidden;
   background-color: #4a4b3d;
-
+  
 }
 .rightNav{
   float: right;
@@ -188,7 +190,7 @@ div.chat-form-wrapper button:hover {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 706px) {
   .topnav a:not(.logo) {display: none;}
   .topnav a.icon {
     float: right;
@@ -197,7 +199,7 @@ div.chat-form-wrapper button:hover {
   
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 706px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -216,74 +218,12 @@ div.chat-form-wrapper button:hover {
 
 /* responsive styles */
 
-@media (max-width: 1440px){
-    .trendyItems{
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        
-    }
+
+.trendyItems{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  
 }
-
-
-
-@media (max-width: 976px){
-    
-
-
-    .trendySearch{
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      flex-wrap: wrap;
-      align-items: baseline;
-      justify-items: center;
-    }
-    .search-bar{
-      width: 80%;
-    }
-    .campImg{
-        height: 100px;
-        margin-bottom: 0;
-    }
-
-    .trendyItems{
-        display: grid;
-        grid-template-columns: repeat(1, minmax(0, 1fr));
-        /* padding-left: 15px; */
-        justify-content: center;
-        overflow: hidden;
-    }
-    .about-camp{
-      
-      overflow: hidden;
-      line-height: 25px;
-      text-align: center;
-      width: fit-content;
-      padding-left: 0px;
-      padding-right: 0;
-      display: inline;
-    }
-    @media (max-width: 976px){
-      .about-camp{
-        margin: 20px;
-      }
-    }
-    .about-camp h2{
-      margin-top: 0;
-      text-align: center;
-    
-    }
-    .about-camp .button-92{
-      margin-left: 90px;
-    }
-    .tip-container{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-    
-   
-  }
 
 .advertiseText{
     background-color: #7b98c2;
@@ -337,19 +277,7 @@ div.chat-form-wrapper button:hover {
   outline: none;
 }
 
-@media (max-width:976px){
-  .search-bar input{
-    
-    width: 100%;
-    padding: 0px 0px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    border-color: #254e1c;
-  
-    
-  }
-}
+
 
 a{
     text-decoration: none;
@@ -399,22 +327,6 @@ a{
    
 }
 
-@media (max-width: 976px){
-  .campImg{
-    height: 150px;
-   
-  }
-  .about-camp{
-    margin-left: 20px;
-    margin-right: 20px;
-    overflow: hidden;
-    width: 200px;
-    height: fit-content;
-  }
-  .about-camp p{
-    
-  }
-}
 
 .about-camp{
   margin: 10px;
@@ -606,6 +518,120 @@ a{
     
   }
 
+  @media (max-width: 976px) {
+    .search-bar input{
+      
+      width: 100%;
+      padding: 0px 0px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      border-color: #254e1c;
+    
+      
+    }
+    .trendyItems {
+      grid-template-columns: repeat(2, minmax(0, 1fr)); /* Change to two columns on smaller screens */
+      gap: 10px; /* Reduce spacing between items */
+    }
+    
+      .about-camp{
+        height: 100px;
+        width: 200px;
+        display: inline;
+        margin-left: 20px;
+        margin-right: 20px;
+        overflow: hidden;
+
+        height: fit-content;
+      }
+      .trendyButton{
+        width: 100px;
+        height: fit-content;
+      }
+      .campImg{
+        height: 300px;
+      }
+      .about-camp .button-92{
+        display: flex;
+        justify-content: center;
+        margin-left: 300px;
+        width: fit-content;
+        align-items: center;
+      }
+  }
+  
+  
+  @media (max-width: 706px){
+    .trendyButton{
+      height: fit-content;
+    }
+    .search-bar input{
+      
+      width: 200px;
+      overflow: hidden;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      border-color: #254e1c;
+    
+      
+    }
+      
+    .trendyItems {
+      grid-template-columns: repeat(1, minmax(0, 1fr)); /* Switch to a single column for even smaller screens */
+      justify-content: center;
+      overflow: hidden;
+    }
+  
+      .trendySearch{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-items: center;
+      }
+      .search-bar{
+        width: 50%;
+      }
+      .campImg{
+          height: 200px;
+          margin-bottom: 0;
+          overflow: hidden;
+      }
+  
+      .about-camp{
+        margin-left: 10px;
+        margin-right: 10px;
+        overflow: hidden;
+        line-height: 25px;
+        text-align: center;
+        width: 200px;
+        height: fit-content;
+        display: inline;
+      }
+     
+      .about-camp h2{
+        margin-top: 0;
+        text-align: center;
+      
+      }
+      .about-camp .button-92{
+        margin-left: 90px;
+        display: flex;
+        justify-content: center;
+      }
+      .tip-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      
+     
+    }
+  
+
 /* footer style */
 footer{
   margin-top: 20px;
@@ -619,6 +645,7 @@ footer{
   grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-gap: 2rem;
 }
+
 @media (max-width: 976px){
   
   .f-item-con{
@@ -630,6 +657,11 @@ footer{
   right: 100px;
   text-align: center;
   align-items: center;
+  overflow: hidden;
+  }
+  .f-item-con p{
+    overflow: hidden;
+    margin-right: 15px;
   }
   .map{
     width: 230px;
