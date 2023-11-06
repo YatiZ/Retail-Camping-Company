@@ -375,5 +375,40 @@ h1{
         padding: 0px;
         width: 340px;
     }
+    .q-a-section{
+        margin:20px 80px;
+    }
     
   }
+  .q-a-section{
+    margin: 0px 70px;
+  }
+  .q-a-section h2{
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .collapsible {
+    background-color: #3f644c;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline:1px solid;
+    font-size: 15px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #7b98c2;
+  }
+  
+  .collapse-content {
+    padding: 10px 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #9ca3af;
+  }
+
+  

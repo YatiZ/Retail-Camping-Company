@@ -8,11 +8,14 @@
       src="https://kit.fontawesome.com/9dca7ae98e.js"
       crossorigin="anonymous"
     ></script>
-    <script src="/js/script.js"></script>
+    <script src="/js/collapse.js" defer></script>
     <link rel="stylesheet" href="/css/HomePage.css" >
     <link rel="stylesheet" href="/css/ReviewPage.css" >
     <link rel="stylesheet" href="/css/BasketPage.css" >
 </head>
+<style>
+  
+  </style>
 <body>
     <div class="advertiseText">
         <a href="#trendyItems">TRENDY CAMPING ACCESSORIES | SHOP NOW</a>
@@ -28,9 +31,9 @@
             <a href="/html/FurniturePage.html" class="nav-btn">Furniture</a>
             <a href="/html/ReviewsPage.html" class="nav-btn active">Reviews</a>
             <a href="/html/OffersPage.html" class="nav-btn">Offers and Packages</a>
-            <a href="/html/BasketPage.html"
-              ><i class="fa-solid fa-cart-shopping nav-btn"></i
-            ></a>
+            <a href="/html/BasketPage.html"><i class="fa-solid fa-cart-shopping nav-btn">
+              <span>3</span>
+            </i></a>
             <a href="javascript:void(0);" class="icon nav-btn" onclick="myFunction()">
               <i class="fa fa-bars"></i>
             </a>
@@ -251,6 +254,23 @@
             </div>
            
         </div>
+<div class="q-a-section">
+<h2>Q & A Section</h2>
+        <button type="button" class="collapsible">What types of camping equipment do you sell?</button>
+<div class="collapse-content">
+  <p>We sell a wide variety of camping equipment, including tents, sleeping bags, camping stoves, camping chairs, camping backpacks, camping lanterns, camping coolers, camping cooking supplies, camping clothing and footwear, camping safety supplies, and camping accessories.</p>
+</div>
+<button type="button" class="collapsible">How much does shipping cost? Do you offer free shipping on orders over a certain amount? What is your return policy?</button>
+<div class="collapse-content">
+  <p>We offer free standard shipping on all orders over $50.
+    For orders under $50, there is a flat shipping rate of $4.99.
+    We also offer expedited shipping options for an additional fee.</p>
+</div>
+<button type="button" class="collapsible">How can customers contact you with questions or concerns? Do you offer live chat support?</button>
+<div class="collapse-content">
+  <p>We offer live chat support during our business hours, which are Monday through Friday from 9am to 5pm EST. To access live chat, simply click on the "Live Chat" button in the bottom right corner of our website.</p>
+</div>
+</div>
       </div>
 
       <!-- footer section -->
@@ -299,5 +319,7 @@
       </div>
       <div class='cr-con'>Copyright &copy; 2022 | Made by RCC</div>
   </footer>
+ 
 </body>
+
 </html>
